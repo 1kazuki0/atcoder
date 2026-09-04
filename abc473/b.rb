@@ -11,3 +11,9 @@ total.times do |i|
 end
 puts cards.sum
 
+# 正解
+gets
+p count = Hash.new(0) # ハッシュを作成、初期値は0（{}なら → count[a]がnilを返すので、nil + 1となりエラーで止まるため）
+gets.split.map(&to_i).each { |a| count[a] += 1 } # ハッシュ作成から.eachの処理はtallyメソッドでも代用可能
+puts count.sum { |k, v| v.odd? ? k : 0} # ペアのカードは残るので、偶数は消え、奇数のみ残る
+
