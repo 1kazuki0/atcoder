@@ -1,5 +1,5 @@
 # https://atcoder.jp/contests/abc467/tasks/abc467_a
-# 2026/9/14 結果
+# 2026/9/14 結果 WA
 
 total, distance = gets.split.map(&:to_i)
 g = gets.chomp.chars

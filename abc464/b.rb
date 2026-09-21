@@ -1,5 +1,5 @@
 # https://atcoder.jp/contests/abc464/tasks/abc464_b
-# 2026/9/20 結果
+# 2026/9/20 結果 WA
 
 h, w = gets.split.map(&:to_i)
 displays = h.times.map { gets.chomp.split("") }
